@@ -24,10 +24,18 @@ form {
 }
 form input,
 form button {
-  padding: 2px 10px;
-  font-size: 1.5rem;
+  padding: 5px 10px;
+  font-size: 1.2rem;
   border: none;
   background-color: palegreen;
+  font-family: system-ui;
+  font-weight: 600;
+}
+h2 {
+  font-family: monospace;
+  color: #a9ff67e0;
+  text-shadow: 4px 2px 7px black;
+  border-radius: 2px;
 }
 input {
   outline: none;
@@ -37,7 +45,6 @@ form button {
   cursor: pointer;
   background: palegreen;
   transition: all 0.3s ease;
- 
 }
 form button:hover {
   background: rgb(218, 67, 41);
@@ -61,19 +68,20 @@ ul.todo-list {
   justify-content: space-between;
   background: white;
   margin-top: 13px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
+  font-family: monospace;
+  font-size: 16px;
 }
-.fall{
+.fall {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 li.todo-item {
   flex: 1;
   padding-top: 4px;
   margin-left: 0.7rem;
   color: rgb(54, 11, 0);
- 
 }
 
 button.complete-btn {
@@ -84,24 +92,23 @@ button.complete-btn {
   box-shadow: 6px 1px 10px -1px black;
 }
 button.trush-btn {
-    background: rgb(204, 58, 32);
-    border: none;
-    padding: 6px;
-    color: white;
-    box-shadow: 6px 1px 10px -1px black;
-  }
- .fa-trash,.fa-check {
-    pointer-events: none;
-  }
-.completed{
+  background: rgb(204, 58, 32);
+  border: none;
+  padding: 6px;
+  color: white;
+  box-shadow: 6px 1px 10px -1px black;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.completed {
   opacity: 0.5;
   text-decoration: line-through;
 }
 
-
-
 /* //SELECT PART */
-select{
+select {
   -webkit-animation: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -110,24 +117,24 @@ select{
   color: #ff6f47;
   width: 9rem;
   cursor: pointer;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-.select{
+.select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
 }
-.select::after{
+.select::after {
   content: "\25BC";
   position: absolute;
   top: 0;
   right: 0;
   background-color: #ff6f47;
-  padding: .5rem;
+  padding: 0.5rem;
   pointer-events: none;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
-.select:hover::after{
+.select:hover::after {
   background: white;
 }
